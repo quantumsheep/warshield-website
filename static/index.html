@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WarShield</title>
+
+  <link rel="stylesheet" href="/libs/normalize.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    console.log(`
+    ▄▄▌ ▐ ▄▌ ▄▄▄· ▄▄▄  .▄▄ ·  ▄ .▄▪  ▄▄▄ .▄▄▌  ·▄▄▄▄  
+    ██· █▌▐█▐█ ▀█ ▀▄ █·▐█ ▀. ██▪▐███ ▀▄.▀·██•  ██▪ ██ 
+    ██▪▐█▐▐▌▄█▀▀█ ▐▀▀▄ ▄▀▀▀█▄██▀▐█▐█·▐▀▀▪▄██▪  ▐█· ▐█▌
+    ▐█▌██▐█▌▐█ ▪▐▌▐█•█▌▐█▄▪▐███▌▐▀▐█▌▐█▄▄▌▐█▌▐▌██. ██ 
+    ▀▀▀▀ ▀▪ ▀  ▀ .▀  ▀ ▀▀▀▀ ▀▀▀ ·▀▀▀ ▀▀▀ .▀▀▀ ▀▀▀▀▀• Come improve WarShield on https://github.com/QuantumSheep/warshield`.split('\n').map(l => l.trim()).join('\n').trim());
+  </script>
+</head>
+
+<body>
+  <h1>What is this?</h1>
+  <div>This is WarShield, a CLI tool made to cipher and decipher your files with a password using AES-256. It was made to ensure a full files protection inside a storage device. If those are lost, malicious peoples can take over your files and their data.</div>
+  <br>
+  <div>This is when WarShield comes with his fast and reliable solution.</div>
+  <br>
+  <div>It uses AES-256 GCM (Galois/Counter Mode) with random 16 bits initialization vector.</div>
+  <div>Password is hash in a 256 bits key (32 length) with SHA-512 using random 64 bits salt and rounds (between 3000 and 9000 rounds).</div>
+
+  <br>
+  <h1>How to install</h1>
+  <div>You can use <span class="code-inline">npm</span> CLI to install WarShield. Use <span class="code-inline">npm install -g warshield</span>.</div>
+
+  <br>
+  <h1>Usage</h1>
+  <div class="code">
+    <div>warshield [options] &lt;mode&gt;</div>
+    <br>
+    <div>Options:</div>
+    <ul>
+      <li>-V, --version output the version number</li>
+      <li>-v, --verbose enable verbosity</li>
+      <li>-h, --help output usage information</li>
+    </ul>
+    <br>
+    <div>Commands:</div>
+    <ul>
+      <li>encrypt &lt;file&gt; [options] encrypt a file or all files in a directory</li>
+      <li>decrypt &lt;file&gt; [options] decrypt a file or all files in a directory</li>
+    </ul>
+  </div>
+
+  <br>
+  <h1>Links</h1>
+  <a href="https://github.com/QuantumSheep/warshield">> Github</a>
+  <br>
+  <a href="https://www.npmjs.com/package/warshield">> NPM package</a>
+</body>
+
+</html>

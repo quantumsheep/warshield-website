@@ -23,6 +23,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 15px;
+  padding-bottom: 50px;
   font-size: 1em;
 }
 
@@ -31,19 +32,13 @@ h1 {
 }
 
 a {
-  text-decoration: none;
-  display: inline-block;
-  color: #e9e9e9;
-}
-
-a:hover {
-  color: #c2c2c2;
+  color: #80ff70;
 }
 
 .code {
   padding: 10px;
   color: #e0e0e0;
-  background: #2e2e2e;
+  background: #121314;
   border-radius: 4px;
   font-size: 0.85em;
   display: inline-block;
@@ -52,7 +47,7 @@ a:hover {
 .code-inline {
   padding: 1px;
   color: #e0e0e0;
-  background: #2e2e2e;
+  background: #121314;
   border-radius: 4px;
   font-size: 0.85em;
   display: inline-block;
@@ -61,4 +56,21 @@ a:hover {
 .code ul {
   list-style: none;
   margin: 0;
+}
+
+.asciinema-theme-asciinema .asciinema-terminal {
+  background-color: #121314;
+}
+
+.asciinema-player {
+  border-radius: 4px;
+}
+
+.asciinema-terminal {
+  border-width: 0;
+  padding: 0.5em;
+}
+
+.asciinema-player .control-bar {
+  background-color: rgba(0, 0, 0, 0.8);
 }

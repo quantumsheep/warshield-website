@@ -12,6 +12,7 @@
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="/libs/normalize.min.css">
+  <link rel="stylesheet" href="/libs/asciinema-player.css">
   <link rel="stylesheet" href="/style.css">
   <script>
     console.log(`
@@ -25,12 +26,12 @@
 
 <body>
   <h1>What is this?</h1>
-  <div>This is WarShield, a CLI tool made to cipher and decipher your files with a password using AES-256. It was made to ensure a full files protection inside a storage device. If those are lost, malicious peoples can take over your files and their data.</div>
+  <div>This is WarShield, a CLI tool made to cipher and decipher your files with a password using AES-256. It was made to ensure a full files protection inside a storage device. If those are lost or stolen, malicious peoples can take over your data.</div>
   <br>
   <div>This is when WarShield comes with his fast and reliable solution.</div>
   <br>
-  <div>It uses AES-256 GCM (Galois/Counter Mode) with random 16 bits initialization vector.</div>
-  <div>Password is hash in a 256 bits key (32 length) with SHA-512 using random 64 bits salt and rounds (between 3000 and 9000 rounds).</div>
+  <div>It uses <a href="https://en.wikipedia.org/wiki/Galois/Counter_Mode" target="blank">AES-256 GCM (Galois/Counter Mode)</a> with random 16 bytes initialization vector.</div>
+  <div>Password is hash in a 256 bits key with SHA-512 using random 64 bytes salt and rounds (between 3000 and 9000 rounds).</div>
 
   <br>
   <h1>How to install</h1>
@@ -57,9 +58,16 @@
 
   <br>
   <h1>Links</h1>
-  <a href="https://github.com/QuantumSheep/warshield">> Github</a>
+  <a href="https://github.com/QuantumSheep/warshield" target="blank">> Github</a>
   <br>
-  <a href="https://www.npmjs.com/package/warshield">> NPM package</a>
+  <a href="https://www.npmjs.com/package/warshield" target="blank">> NPM package</a>
+
+  <br>
+  <br>
+  <h1>Demonstration</h1>
+  <asciinema-player src="/warshield-demo.json" cols="100" rows="24"></asciinema-player>
+
+  <script src="/libs/asciinema-player.js"></script>
 </body>
 
 </html>

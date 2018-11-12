@@ -38,7 +38,7 @@ a {
 .code {
   padding: 10px;
   color: #e0e0e0;
-  background: #121314;
+  background: #3c3c3c;
   border-radius: 4px;
   font-size: 0.85em;
   display: inline-block;
@@ -47,7 +47,7 @@ a {
 .code-inline {
   padding: 1px;
   color: #e0e0e0;
-  background: #121314;
+  background: #3c3c3c;
   border-radius: 4px;
   font-size: 0.85em;
   display: inline-block;
@@ -59,7 +59,7 @@ a {
 }
 
 .asciinema-theme-asciinema .asciinema-terminal {
-  background-color: #121314;
+  background-color: #3c3c3c;
 }
 
 .asciinema-player {

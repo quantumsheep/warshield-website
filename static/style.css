@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Terminux";
-  src: url('/terminux.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 * {
   box-sizing: border-box;
@@ -15,7 +12,7 @@ body {
   max-width: 720px;
   color: #fcfcfc;
   min-height: 100%;
-  font-family: 'Terminux', sans-serif;
+  font-family: 'Inconsolata', monospace;
   background-color: #0e0e11;
   background-image: url('warshield-white.png');
   background-size: 50% auto;

@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  client:
+    build: .
+    volumes:
+      - ./static:/usr/share/nginx/html
+    ports:
+      - 3000:80
